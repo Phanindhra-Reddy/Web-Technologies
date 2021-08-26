@@ -1,0 +1,151 @@
+#container {
+    width:1280px;
+    margin:0 auto;
+  /*  border:1px solid black;  */
+}
+h1 a{
+    font-family:serif;
+    font-size:40px;
+    font-weight:100;
+    text-decoration:none;
+    color:rgb(18, 162, 219);
+}
+#header{
+    padding-bottom:10px;
+    height:100px;
+}
+#j{
+    color:crimson;
+    font-size:50px;
+}
+#searchBox{
+    float:right;
+    background-color:rgb(27, 162, 216);
+    width:400px;
+    height:50px;
+    padding:20px 20px 0 20px;
+    margin-top:20px;
+}
+#brand{
+    float:left;
+}
+#logo{
+    width:100px;
+    height:80px;
+    float:left;
+}
+.text{
+    float:left;
+    width:280px;
+    padding:5px;
+    font-size:15px;
+    color:crimson;
+    background: white url(logo.png) right center no-repeat;
+    border:1px solid crimson;
+}
+.clear{
+    clear:both;
+}
+.submit{
+    float:right;
+    color:white;
+    background-color:crimson;
+    padding:5px;
+    font-weight: bold;
+}
+#menu{
+    height:60px;
+    background: linear-gradient(rgb(18, 162, 219),rgb(151, 213, 238));
+    padding:7px 0;
+}
+ul{
+    list-style: none;
+}
+#menu ul li{
+    float:left;
+    padding:0 30px;
+    height:30px;
+    border-right: 1px solid white ;
+}
+#menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:17px;
+    color:white;
+    line-height:30px;
+    transition:font-size 0.3s ease;
+}
+#menu ul li:last-child{
+    border-right:none;
+}
+#menu ul li a:hover, #menu ul li a.active{
+    font-size:19px;
+    font-weight:bold;
+    color:rgb(247, 4, 53);
+}
+#intro{
+    margin:16px 0;
+    background:linear-gradient(rgb(250, 221, 226),rgb(250, 221, 226));
+    padding:20px;
+    font-weight: normal;
+}
+#intro h3{
+    font-size:45px;
+    font-weight:normal;
+    color:crimson;
+
+}
+#intro p{
+    color:rgb(231, 99, 125);
+    font-size:20px;
+    text-align:justify;
+    font-family:'Times New Roman', Times, serif;
+}
+.sidebar{
+    width:590px;
+    height:500px;
+    border:1px solid crimson;
+    border-radius: 13px;
+    padding:10px 20px;
+}
+.sidebar h3{
+    color:rgb(243, 87, 118);
+    font-size:30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   /* font-weight:normal;*/
+    text-shadow:1px 1px 2px black;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:rgb(27, 162, 216);
+    transition:font-size 0.3s ease;
+}
+.sidebar ul li a:hover,.sidebar ul li a:active{
+    color:crimson;
+    font-size:23px;
+}
+#leftsidebar{
+    float:left;
+}
+#leftsidebar ul li{
+    padding-bottom:7px;
+    list-style-image: url(ar1.png);
+}
+#rightsidebar{
+    float:right;
+}
+#rightsidebar ul li{
+    padding-bottom:7px;
+    list-style-image: url(ar2.png);
+}
+.sidebar ul{
+    padding-top:10px;
+}
+.footer{
+    height:50px;
+    background:linear-gradient(rgb(18, 162, 219),rgb(151, 213, 238));
+    padding:10px 30px;
+    margin-top:10px;
+    color:white;
+}
