@@ -1,5 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
 #container {
-    width:1280px;
+    width:90%px;
     margin:0 auto;
   /*  border:1px solid black;  */
 }
@@ -12,27 +19,33 @@ h1 a{
 }
 #header{
     padding-bottom:10px;
-    height:100px;
+    display:flex;
+    flex-wrap: wrap;
 }
 #j{
     color:crimson;
     font-size:50px;
 }
 #searchBox{
-    float:right;
+  /*  float:right;*/ 
+    flex:50%;
     background-color:rgb(27, 162, 216);
-    width:400px;
-    height:50px;
-    padding:20px 20px 0 20px;
+    min-width:400px;
+    padding:20px;
     margin-top:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
-#brand{
-    float:left;
+.combine{
+    flex: 50%;
+    min-width: 500px;
 }
+
 #logo{
     width:100px;
     height:80px;
-    float:left;
+   float:left;
 }
 .text{
     float:left;
@@ -54,20 +67,21 @@ h1 a{
     font-weight: bold;
 }
 #menu{
-    height:60px;
+    
     background: linear-gradient(rgb(18, 162, 219),rgb(151, 213, 238));
-    padding:7px 0;
+    padding:20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-ul{
-    list-style: none;
-}
-#menu ul li{
-    float:left;
+
+#menu a{
     padding:0 30px;
     height:30px;
     border-right: 1px solid white ;
 }
-#menu ul li a{
+#menu a{
     text-decoration: none;
     text-transform: uppercase;
     font-size:17px;
@@ -75,13 +89,21 @@ ul{
     line-height:30px;
     transition:font-size 0.3s ease;
 }
-#menu ul li:last-child{
+#menu a:last-child{
     border-right:none;
 }
-#menu ul li a:hover, #menu ul li a.active{
+#menu a:hover, #menu a.active{
     font-size:19px;
     font-weight:bold;
     color:rgb(247, 4, 53);
+}
+@media screen and (max-width:700px){
+    #menu{
+    flex-direction:column;
+    }
+    #menu a{
+        border-right: none;
+    }
 }
 #intro{
     margin:16px 0;
@@ -101,13 +123,21 @@ ul{
     text-align:justify;
     font-family:'Times New Roman', Times, serif;
 }
+#content{
+    display:flex;
+    flex-wrap: wrap;
+
+}
 .sidebar{
-    width:590px;
-    height:500px;
     border:1px solid crimson;
     border-radius: 13px;
-    padding:10px 20px;
+    padding:10px 30px;
+    flex:50%;
+    margin:10px;
+    min-width:300px;
 }
+#leftsidebar{flex:1}
+#rightsidebar{flex:1}
 .sidebar h3{
     color:rgb(243, 87, 118);
     font-size:30px;
@@ -125,16 +155,12 @@ ul{
     color:crimson;
     font-size:23px;
 }
-#leftsidebar{
-    float:left;
-}
+
 #leftsidebar ul li{
     padding-bottom:7px;
     list-style-image: url(ar1.png);
 }
-#rightsidebar{
-    float:right;
-}
+
 #rightsidebar ul li{
     padding-bottom:7px;
     list-style-image: url(ar2.png);
